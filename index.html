@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Practice Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="timer-card">
+    <h1>Exam Practice Timer</h1>
+    <p class="subtitle">Set your duration and stay focused.</p>
+
+    <div class="controls">
+      <label for="minutes">Minutes</label>
+      <input id="minutes" type="number" min="1" value="25" />
+    </div>
+
+    <div id="display" class="display" aria-live="polite">25:00</div>
+
+    <div class="buttons">
+      <button id="startBtn" type="button">Start</button>
+      <button id="pauseBtn" type="button" disabled>Pause</button>
+      <button id="resetBtn" type="button">Reset</button>
+    </div>
+
+    <p id="status" class="status">Ready</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
